@@ -5,59 +5,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ana Khéren Duarte</title>
+<title>Ana Khéren Duarte | Estética</title>
 
 <link rel="stylesheet" href="styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
 
-<nav class="navbar">
+<header class="header">
 
-<h1 class="logo">
+<div class="logo">
+
 <img src="logo1.png">
-</h1>
 
-<ul class="nav-links">
-<li><a href="#services">Serviços</a></li>
-<li><a href="#about">Sobre</a></li>
-<li><a href="#contact">Contato</a></li>
-</ul>
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#services">Serviços</a>
+<a href="#gallery">Galeria</a>
+<a href="#about">Sobre</a>
+<a href="#booking">Agendamento</a>
 
 </nav>
 
-<div class="hero">
+</header>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
 
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<img src="img3.jpeg" alt="Ana Khéren Duarte" class="profile-pic">
+<h1>Ana Khéren Duarte</h1>
 
-<h2>Ana Khéren Duarte</h2>
+<p>Estética Facial • Skincare • Makeup</p>
 
-<p>Estética • Skincare • Makeup</p>
-
-<div class="social-icons">
-
-<a href="https://www.instagram.com/anakherenestetica" class="btn instagram">Instagram</a>
-
-<a href="https://www.tiktok.com/@anakheren03" class="btn tiktok">TikTok</a>
-
-<a href="https://api.whatsapp.com/send?phone=5599984270256" class="btn whatsapp">Agendar</a>
+<a href="#booking" class="btn-main">Agendar Atendimento</a>
 
 </div>
 
-</div>
+</section>
 
-</div>
-
-</header>
+<!-- SERVIÇOS -->
 
 <section id="services" class="services">
 
@@ -67,22 +65,43 @@
 
 <div class="service-card">
 <h3>Limpeza de Pele</h3>
-<p>Tratamento profundo que remove impurezas e deixa sua pele renovada.</p>
+<p>Tratamento profundo para remover impurezas e revitalizar sua pele.</p>
 </div>
 
 <div class="service-card">
 <h3>Maquiagem Profissional</h3>
-<p>Maquiagem para eventos especiais valorizando sua beleza natural.</p>
+<p>Make elegante para eventos e ocasiões especiais.</p>
 </div>
 
 <div class="service-card">
 <h3>Tratamentos Faciais</h3>
-<p>Procedimentos que ajudam na hidratação, rejuvenescimento e saúde da pele.</p>
+<p>Procedimentos que rejuvenescem e hidratam a pele.</p>
 </div>
 
 </div>
 
 </section>
+
+<!-- GALERIA -->
+
+<section id="gallery" class="gallery">
+
+<h2>Galeria de Resultados</h2>
+
+<div class="gallery-grid">
+
+<img src="img1.jpeg">
+<img src="img2.jpeg">
+<img src="img3.jpeg">
+<img src="img4.jpeg">
+<img src="img5.jpeg">
+<img src="img6.jpeg">
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
 
 <section id="about" class="about">
 
@@ -90,31 +109,66 @@
 
 <p>
 
-Sou especialista em estética e maquiagem, oferecendo cuidados personalizados para realçar sua beleza natural e elevar sua autoestima.
+Sou especialista em estética facial e maquiagem profissional.  
+Meu objetivo é realçar sua beleza natural e elevar sua autoestima através de tratamentos personalizados.
 
 </p>
 
 </section>
 
-<footer id="contact">
+<!-- AGENDAMENTO -->
 
-<h2>Agende seu atendimento</h2>
+<section id="booking" class="booking">
 
-<p>Entre em contato pelas redes sociais ou WhatsApp.</p>
+<h2>Agendar Atendimento</h2>
 
-<div class="social-icons">
+<form id="form-agendamento">
 
-<a href="https://www.instagram.com/anakherenestetica" class="btn instagram">Instagram</a>
+<input type="text" placeholder="Nome" required>
 
-<a href="https://www.tiktok.com/@anakheren03" class="btn tiktok">TikTok</a>
+<input type="tel" placeholder="Telefone" required>
 
-<a href="https://api.whatsapp.com/send?phone=5599984270256" class="btn whatsapp">WhatsApp</a>
+<select required>
+
+<option value="">Escolha o serviço</option>
+
+<option>Limpeza de Pele</option>
+<option>Maquiagem Profissional</option>
+<option>Tratamento Facial</option>
+
+</select>
+
+<input type="date" required>
+
+<textarea placeholder="Mensagem"></textarea>
+
+<button type="submit">Agendar</button>
+
+</form>
+
+</section>
+
+<!-- CONTATO -->
+
+<footer>
+
+<h3>Contato</h3>
+
+<div class="social">
+
+<a href="https://www.instagram.com/anakherenestetica">Instagram</a>
+
+<a href="https://www.tiktok.com/@anakheren03">TikTok</a>
+
+<a href="https://api.whatsapp.com/send?phone=5599984270256">WhatsApp</a>
 
 </div>
 
-<p class="copy">© 2024 Ana Khéren Duarte</p>
+<p>© 2026 Ana Khéren Duarte</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
