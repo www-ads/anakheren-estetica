@@ -1,194 +1,323 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
-}
+body{
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FF4081;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #FF4081;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items:low;
-    height: 82vh;
-    background-image: url('fundo2.jpeg');
-    background-size: cover;
-    background-position: low;
-    color: #ca6b85;
-    text-align: center;
-    padding: 15px;	
+font-family:'Poppins',sans-serif;
+background:#fff;
+color:#444;
 
 }
 
-.profile-pic {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
+position:sticky;
+top:0;
+z-index:999;
+
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.logo img{
+
+height:55px;
+
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.nav-links{
+
+display:flex;
+list-style:none;
+
 }
 
-.social-icons .btn {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background 0.3s ease;
+.nav-links li{
+
+margin-left:30px;
+
 }
 
-.instagram {
-    background: #f54e87eb;
+.nav-links a{
+
+text-decoration:none;
+color:#444;
+font-weight:500;
+
+transition:0.3s;
+
 }
 
-.tiktok {
-    background: #f54e87eb;
+.nav-links a:hover{
+
+color:#e68ba4;
+
 }
 
-.whatsapp {
-    background: #f54e87eb;
+/* HERO */
+
+.hero{
+
+height:85vh;
+
+background-image:url("fundo2.jpeg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
 }
 
-.btn:hover {
-    opacity: 0.8;
+.hero-overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.6);
+
 }
 
-/* Services Section */
-.services {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
+.hero-content{
+
+position:relative;
+text-align:center;
+
 }
 
-.services h2 {
-    font-size: 42px;
-    color: #FF4081;
-    margin-bottom: 40px;
+.profile-pic{
+
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+
+border:6px solid white;
+
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+
 }
 
-.service-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.hero h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:38px;
+
+color:#c7778f;
+
+margin-bottom:10px;
+
 }
 
-.service-card {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    width: 300px;
+.hero p{
+
+color:#777;
+margin-bottom:20px;
+
 }
 
-.service-card h3 {
-    font-size: 24px;
-    color: #FF4081;
-    margin-bottom: 10px;
+/* BOTÕES */
+
+.btn{
+
+padding:10px 22px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+margin:5px;
+
+display:inline-block;
+
+font-size:14px;
+
+transition:0.3s;
+
 }
 
-.service-card p {
-    font-size: 16px;
-    color: #666;
+.instagram{
+
+background:#e68ba4;
+
 }
 
-/* About Section */
-.about {
-    padding: 50px;
-    text-align: center;
-    background-color: #FFFAF0;
+.tiktok{
+
+background:#e68ba4;
+
 }
 
-.about h2 {
-    font-size: 32px;
-    color: #FF4081;
-    margin-bottom: 20px;
+.whatsapp{
+
+background:#25d366;
+
 }
 
-.about p {
-    font-size: 18px;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
 }
 
-/* Footer */
-footer {
-    padding: 30px;
-    background-color: #333;
-    color: white;
-    text-align: center;
+/* SERVIÇOS */
+
+.services{
+
+padding:80px 10%;
+text-align:center;
+
 }
 
-footer p {
-    margin: 10px 0;
+.services h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:40px;
+
+color:#c7778f;
+
+margin-bottom:50px;
+
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+.service-grid{
 
-    .service-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
 
-    .service-card {
-        width: 90%;
-    }
+}
+
+.service-card{
+
+background:white;
+
+padding:30px;
+
+width:280px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+
+transition:0.4s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.service-card h3{
+
+color:#e68ba4;
+
+margin-bottom:10px;
+
+}
+
+/* SOBRE */
+
+.about{
+
+padding:80px 10%;
+
+background:#fff5f8;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:36px;
+
+color:#c7778f;
+
+margin-bottom:20px;
+
+}
+
+.about p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.7;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#333;
+
+color:white;
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+footer h2{
+
+margin-bottom:10px;
+
+}
+
+.copy{
+
+margin-top:20px;
+font-size:14px;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.service-grid{
+
+flex-direction:column;
+align-items:center;
+
+}
+
 }
